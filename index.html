@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03082f1c54.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/Screenshot 2023-09-04 115847.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Ramesh Babu</span><br> From Chennai </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----about---- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/ramesh.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a skilled front-end developer with experience in crafting responsive,
+                        user-focused web applications using<span id="aboutspan"> HTML, CSS, JavaScript, and frameworks
+                            like React.</span>
+                        Dedicated to delivering high-quality, accessible designs,
+                        I combine creativity with technical expertise. I thrive in collaborative environments and
+                        continually enhance my skills to stay at the forefront of web technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span id="skillspan1">HTML & CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%;">90%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span id="skillspan1">JavaScript</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;">85%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span id="skillspan1">React</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;">75%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span id="skillspan1">Ui/Ux Design</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;">70%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span id="skillspan1">WordPress</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;">70%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Front-End Developer Intern</span><br>
+                                Worked as a Front-End Developer at Magic Bus Foundation, creating responsive and
+                                user-friendly web interfaces using
+                                HTML, CSS, and JavaScript. Collaborated with cross-functional teams to optimize
+                                performance and accessibility.
+                                Utilized tools like Bootstrap and Git, contributing to projects that enhanced user
+                                engagement and
+                                supported the foundation's mission effectively. <br><strong>(Nov 2024 - Jan
+                                    2025).</strong>
+                            </li>
+                            <li>
+                                <span>Full Stack Developer in Python</span><br>
+                                Completed a comprehensive Full Stack Development course, gaining expertise in front-end
+                                and back-end technologies, with a strong focus on Python.<br>
+                                <strong>(Jan 2024 - May 2024)</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li id="edu1">
+                                <span id="spanedu1">2022 - 2024</span><br>
+                                <p id="edup1">MCA from SCSVMV University, Kanchipuram.</p>
+                                <p>CGPA - 8.96</p>
+                            </li>
+                            <li id="edu1">
+                                <span id="spanedu2">2019 - 2022</span><br>
+                                <p id="edup1">B.Sc. (Computer Science) from SCSVMV University, Kanchipuram.</p>
+                                <p>CGPA - 9.07</p>
+                            </li>
+                            <li id="edu1">
+                                <span id="spanedu2">2018 - 2019</span><br>
+                                <p id="edup1">Higher Secondary Certificate (HSC) from Everwin Mat Hr Sec School, Chennai
+                                    Kolathur.</p>
+                                <p>CGPA - 57%</p>
+                            </li>
+                            <li id="edu1">
+                                <span id="spanedu2">2016 - 2017</span><br>
+                                <p id="edup1">Secondary School Leaving Certificate (SSLC) from Everwin Mat Hr Sec
+                                    School, Chennai Kolathur.</p>
+                                <p>CGPA - 87%</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Certificates Section -->
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li>
+                                <span>Python Programming Certification – GUVI</span><br>
+                                Successfully completed a comprehensive Python programming course,
+                                gaining proficiency in core concepts, data structures, and real-world application
+                                development.<br>
+                                <a href="./images/pythoncertificate.jpg">View Certificate</a>
+                            </li>
+                            <li>
+                                <span>Basics of Java – Besant Technologies</span><br>
+                                Acquired foundational knowledge of Java, covering object-oriented programming, syntax,
+                                and basic application development concepts.<br>
+                                <a href="./BFT47B051.pdf">View Certificate</a>
+                            </li>
+                            <li>
+                                <span>Front End Developer</span><br>
+                                Achieved certification in Magic Bus India Foundation<br>
+                                <a href="">View Certificate</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------service section---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front End Web Developer</h2>
+                    <p><strong>Crafting responsive, visually appealing, and user-friendly web interfaces as a skilled
+                            Front-End Developer.</strong></p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Ui/Ux Design</h2>
+                    <p><strong>Creative UI/UX designer crafting intuitive, user-centered designs for seamless, engaging
+                            digital experiences</strong></p>
+                </div>
+                <div>
+                    <i class="fa-brands fas fa-briefcase"></i>
+                    <h2>Freelancer</h2>
+                    <p><strong>Skilled freelancer delivering high-quality, customized solutions across design,
+                            development, and content creation. Let's collaborate!</strong></p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-------------portfilo---->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/project1.jpg">
+                    <div class="layer">
+                        <h3>Car Rental Management System</h3>
+                        <p>I have created Using Html & Css and PHP,MYSql</p>
+
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="./images/project2.png">
+                    <div class="layer">
+                        <h3>CSA E-Learning Website</h3>
+                        <p>I have created using Html & Css and PHP,MYSql</p>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/project3.png">
+                    <div class="layer">
+                        <h3>Zero Carbon Emission Cement</h3>
+                        <p>I have created using Html & Css and Python,Django</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--------Contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-square-arrow-up-right"></i>rameshbabu4345@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8248182080</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Ramesh8248"><i class="fa-brands fab fa-github"></i></a>
+                        <a href="https://x.com/Ramesh82481?t=g-q5zx8DNBL8MAY3OexATA&s=08"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/rb_gaming_1202?igsh=MWV4cmR4OHZ0NDQyeA=="><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/ramesh-babu-8248ramesh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="./Rameshlatest.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Ramesh.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+        const menuLinks = document.querySelectorAll("#sidemenu a"); // Select all anchor tags in sidemenu
+        menuLinks.forEach(link => {
+            link.addEventListener("click", closemenu); // Add click event to each link
+        });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwGMPGc_9sXLIA376IJJAthNEoNdOiSO8tKWYSwuN2zWCbH3-BjxA6UjGkH0bn19id-Cw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
